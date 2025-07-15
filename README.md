@@ -1,3 +1,12 @@
+# Install
+
+```bash
+npm install -g pnpm@latest-10
+pnpm i
+pnpm dev
+```
+
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
