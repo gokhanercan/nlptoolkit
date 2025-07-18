@@ -16,7 +16,12 @@ mkdir -p ~/ansible
 cd /home/gokhanercan/ansible
 (copy the file)
 ansible-playbook ansible.yml
+docker --version #verify
+```
 
+# Install App
+```bash
+docker build -t nlptoolkit .
 ```
 
 # Windows WSL Commands

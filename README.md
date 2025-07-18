@@ -3,7 +3,8 @@
 ```bash
 npm install -g pnpm@latest-10
 pnpm i
-pnpm dev
+pnpm build
+node .output/server/index.mjs
 ```
 
 
