@@ -15,13 +15,21 @@ sudo apt install -y ansible
 mkdir -p ~/ansible
 cd /home/gokhanercan/ansible
 (copy the file)
-ansible-playbook ansible.yml
+ansible-playbook ansible.yml -K #K for interactive password.
 docker --version #verify
+```
+
+# Prepare Docker Image (Local)
+```bash
+docker build -t nlptoolkit .    
+docker run -p 3000:3000 nlptoolkit  # run in local (optional)
+docker save -o nlptoolkit.tar nlptoolkit
 ```
 
 # Install App
 ```bash
 docker build -t nlptoolkit .
+docker run -p 4536:4536 my-nlp-app
 ```
 
 # Windows WSL Commands
