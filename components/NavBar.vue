@@ -65,11 +65,11 @@ const items = ref<NavigationMenuItem[][]>([
       color="secondary" />
 
     <a href="https://github.com/StarlangSoftware" target="_blank"
-      class="flex self-center items-center justify-self-end py-2 gap-4">
+      class="flex self-center items-center justify-self-end pt-2 gap-4">
       <img src="https://avatars.githubusercontent.com/u/61943048?s=48&v=4" alt="Starlang Software Logo">
       Starlang Software
     </a>
 
-    <p class="text-xs text-center text-gray-400 pb-1">v{{ appVersion }}</p>
+    <p class="text-xs text-center text-gray-400 pb-2">v{{ appVersion }}</p>
   </header>
 </template>
