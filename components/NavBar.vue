@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
 
+const appVersion = useRuntimeConfig().public.appVersion
+
 const menu_labels = {
   "Turkish": {
     "Resources": ['FrameNet', 'PropBank', 'WordNet', 'SentiNet', 'Dictionary', 'Morphological Lexicon'],
@@ -67,5 +69,7 @@ const items = ref<NavigationMenuItem[][]>([
       <img src="https://avatars.githubusercontent.com/u/61943048?s=48&v=4" alt="Starlang Software Logo">
       Starlang Software
     </a>
+
+    <p class="text-xs text-center text-gray-400 pb-1">v{{ appVersion }}</p>
   </header>
 </template>
