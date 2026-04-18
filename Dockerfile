@@ -19,6 +19,7 @@ CMD ["node", "server/index.mjs"]
 # Usage: 
     # docker build -t nlptoolkit .
     # docker run -p 3000:3000 nlptoolkit
+    # docker save -o nlptoolkit.tar nlptoolkit
 
 # # Install git
 # RUN apt-get update && apt-get install -y git
