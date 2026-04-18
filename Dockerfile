@@ -4,7 +4,9 @@ WORKDIR /app
 COPY . .
 RUN npm install -g pnpm@latest
 RUN pnpm install
-RUN pnpm build
+# Raise Node's heap ceiling for the Nitro build — default ~2GB OOMs on
+# this repo's data-file-heavy build. 4GB gives headroom on modest hosts.
+RUN NODE_OPTIONS=--max-old-space-size=4096 pnpm build
 
 COPY *.txt .output/
 COPY *.xml .output/
